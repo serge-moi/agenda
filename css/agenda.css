@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gurajada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Habibi&display=swap');
+
+
+
+
+
+/* BODY */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* MAIN */
+
+
+#logo-add{
+    position: absolute;
+    width: 90px;
+    left: -13px;
+    top: 80px;
+}
+
+
+#time-absolute{
+    position: absolute;
+    top: 198px;
+    left: 18px;
+    text-align: center;
+}
+
+table{
+    width:1900px;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+p{
+    font-family: 'Righteous', cursive;
+    margin-bottom: 27px;
+    font-size: 13px;
+    color: #adadad;
+}
+
+td{
+    border: 1px solid #adadad;
+    height: 40px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+td:hover{
+    background-color: #78d0e987;
+}
+
+.tborder{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: 15px;
+}
+
+.tborder-left{
+    border: none;
+    min-width: 0;
+    max-width: 50px;
+    width: 50px;
+}
+
+.tborder-left2{
+    border: none;
+    border-bottom: 1px solid #adadad;
+    max-width: 20px;
+    min-width: 0px;
+    width: 7px;
+}
+
+tr .tborder-left:hover{
+    background-color: white;
+}
+
+tr .tborder-left2{
+    background-color: white;
+}
+
+.tborder-sud{
+    border-bottom: none;
+}
+
+.tborder-right, #th-bordx{
+    border-right: none;
+}
+
+#th-bord1{
+    border-bottom: 1px solid #adadad; 
+}
+
+#th-nav{
+    height: 60px;
+    box-shadow: 1px 0px 5px darkslategrey;
+}
+
+#div-deroulant{
+    display: flex;
+    width: 725px;
+    justify-content: space-between;
+}
+
+#logo-deroulant{
+    width: 22px;
+    padding: 11px 3px;
+}
+
+#logo-deroulant:hover{
+    background-color: #ada0a0;
+    padding: 11px 11px;
+    border-radius: 24px;
+    margin: 0;
+    position: relative;
+    left: -8px;
+}
+
+#logo-deroulant:hover + #logo-agenda{
+    position: relative;
+    left: -8px;
+}
+
+#logo-agenda{
+    width: 80px;
+}
+
+#deroul1{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+#deroul2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+}
+
+.days{
+    font-family: 'Reem Kufi', sans-serif;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #adadad;
+}
+
+.days-number{
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    padding: 0;
+    color: #adadad;
+}
+
+h1{
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    color: #A45FFF;
+}
+
+span{
+    color:#6077A2;
+}
+
+#span2{
+    color:#CA50AC;
+}
+
+#logo-add:hover{
+    transform: scale(1.1);
+}
+
+td:active{
+    background-color: white;
+}
+
+img{
+    width: 25px;
+}
+
+#para-deroulant{
+    margin: 0;
+    padding: 0px 14px;
+    font-family: 'Gurajada', serif;
+    font-size: 22px;
+    color: #7f7fdf;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px grey;
+}
+
+#para-deroulant:hover{
+    background-color: #c1b7b76b;
+    color: black;
+}
+
+#para-deroulant:hover + #today{
+    display: block;
+    margin: 0;
+    margin-top: 7px;
+}
+
+#lien-deroulant{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Habibi', serif;
+    font-size: 22px;
+    color: #FF0100;
+    width: 170px;
+    justify-content: space-between;
+    text-shadow: 0px 0px 1px yellow;
+    padding: 3px;
+}
+
+#lien-deroulant:hover{
+    background-color: #524d4d0d;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#today{
+    position: absolute;
+    top: 60px;
+    z-index: 50;
+    background-color: #383232c9;
+    left: 339px;
+    padding: 3px;
+    border-radius: 2px;
+    color: #ededed;
+    text-shadow: 1px 1px 3px black;
+    display: none;
+}
+
+#fleches{
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+}
+
+#fleche-bas{
+    margin-top:3px;
+}
+
+#previous{
+    position: absolute;
+    top: 50px;
+    background-color: #0b0909a6;
+    padding: 2px 4px;
+    border-radius: 3px;
+    left: 420px;
+    color: #e4e4e4;
+    display: none;
+}
+
+#img-previous:hover + #previous{
+    display: block;
+}
+
+#next{
+    position: absolute;
+    top: 50px;
+    background-color: #0b0909a6;
+    padding: 2px 4px;
+    border-radius: 3px;
+    left: 460px;
+    color: #e4e4e4;
+    display: none;
+}
+
+#img-next:hover + #next{
+    display: block;
+}
+
+#recall-blue{
+    background-color: #039BE5;
+    height: 364px;
+    padding: 0px;
+    margin-bottom: 2px;
+    width: 250px;
+    position: absolute;
+    top: 478px;
+    border-radius: 2px;
+}
+
+.td-recall{
+    padding: 0;
+}
+
+.recall-para{
+    color: white;
+    margin: 0%;
+    padding-left: 8px;
+    text-overflow: clip;
+}
+
+#recall-orange1{
+    height: 38px;
+    width: 187px;
+    position: relative;
+    z-index: 10;
+    background-color: #F4511E;
+    left: 62px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#recall-orange1:hover{
+    transform: scale(1.2);
+    height: 122px;
+    z-index: 15;
+    position: absolute;
+    top: 573px;
+    width: 229px;
+    left: 150px;
+}
+
+#recall-orange2{
+    height: 38px;
+    width: 187px;
+    position: relative;
+    z-index: 10;
+    background-color: #F4511E;
+    left: 62px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#recall-orange2:hover{
+    transform: scale(1.2);
+    height: 122px;
+    z-index: 15;
+    position: absolute;
+    top: 618px;
+    width: 229px;
+    left: 150px;
+}
+
+#recall-orange3{
+    height: 38px;
+    width: 187px;
+    position: relative;
+    z-index: 10;
+    background-color: #F4511E;
+    left: 62px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#recall-orange3:hover{
+    transform: scale(1.2);
+    height: 122px;
+    z-index: 15;
+    position: absolute;
+    top: 661px;
+    width: 229px;
+    left: 150px;
+}
+
+tr .td-nohover:hover{
+    background-color: white;
+}
+
+strong{
+    background-color: #4f3aff;
+    padding: 1px 7px;
+    border-radius: 23px;
+    color: white;
+}
+
+#this-day{
+    color: #4f3aff;
+}
+
+
+
+
+
+
+
+
+
+
+/* FORMULAIRE */
+
+
+
+#body-form{
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+}
+
+.form-style-3{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+    width: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.form-style-3 fieldset{
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #1d1b1b;
+    padding: 20px;
+    background: #656c8c;
+    box-shadow: inset 0px 0px 15px #403434;
+}
+.form-style-3 fieldset legend{
+	color: white;
+    border-top: 1px solid #232323;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-radius: 5px 5px 0px 0px;
+    background: #f53659;
+    padding: 0px 8px 3px 8px;
+    box-shadow: 0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+    border: 1px solid #bba1ac;
+    outline: none;
+    color: #444444;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #553d47;
+    background: #ffffff;
+    width: 50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+    background: #1b1518;
+    border: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    color: #ffffff;
+    box-shadow: inset -1px -1px 3px #FF62A7;
+    border-radius: 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
